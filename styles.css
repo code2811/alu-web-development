@@ -1,0 +1,150 @@
+/* Custom Color Variables */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #2c3e50;
+    --background-color: #ecf0f1;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 2.5em;
+    color: var(--accent-color);
+    margin-right: 1em;
+}
+
+/* Header Styling */
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+}
+
+header a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+header a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Article Content Styling */
+article {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article h1 {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 0.5em;
+}
+
+article h2 {
+    color: var(--secondary-color);
+    margin-top: 1.5em;
+}
+
+.feature-box {
+    background-color: #f8f9fa;
+    padding: 1.5em;
+    border-left: 4px solid var(--accent-color);
+    margin: 1em 0;
+}
+
+.feature-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-box li {
+    padding: 0.5em 0;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.feature-box li:before {
+    content: "→";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+}
+
+input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Aside Styling */
+aside {
+    background-color: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
