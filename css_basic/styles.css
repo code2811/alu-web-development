@@ -1,0 +1,27 @@
+/*Used Ai to find header, footer hh but it was helpfull*/
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+header, footer {
+    flex-shrink: 0; /* Prevent shrinking */
+}
